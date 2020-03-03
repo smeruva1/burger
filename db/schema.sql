@@ -11,11 +11,3 @@ CREATE TABLE burger (
   PRIMARY KEY (id)
 );
 
-INSERT INTO burger
-  (burger_name)
-VALUES
-  ('Spicy Chicken'),
-  ('Beyond Burger'),
-  ('Baconator');
-
-SELECT * FROM burger;
