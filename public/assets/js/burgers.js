@@ -27,13 +27,14 @@ $('#burger-form').on('submit', function(event) {
 
   $('.devourBurger').on('click', function() {
     // get id of burger we are devouring
+    
     const burgerId = $(this).attr('data-burgerid');
   
     $.ajax({
       url: `/api/burgers/${burgerId}`,
       method: 'PUT',
       data: {
-        adopted: 1
+        devoured: 1
       }
     }).then(response => {
       console.log(response);
