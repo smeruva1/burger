@@ -1,14 +1,15 @@
 {{!-- <div class="container"> --}}
-<div class="p-3 mb-2 bg-warning text-dark">
+<div class="p-3 mb-2 bg-warning text-dark body-text">
   <div class="row justify-content-md-center">
     {{!-- create two columns --}}
-    <div class="col-6">
+    <div class="col-3">
       <h2>Create a Burger</h2>
       <form id="burger-form">
         <div class="form-group">
           <input type="text" class="form-control" placeholder="burger name" name="burger-name" />
         </div>
-        <button class="btn btn-block btn-outline-success">Add Burger</button>
+        <button class="btn btn-block btn-outline-success add-btn">Add Burger</button>
+        
       </form>
     </div>
   </div>
@@ -34,11 +35,11 @@
             <h4>{{this.burger_name}}</h4>
             <div>
               {{!-- devour a burger --}}
-              <button class="btn btn-info devourBurger" data-burgerid="{{this.id}}">
+              <button class="btn btn-info devourBurger manage-burger" data-burgerid="{{this.id}}">
                 Devour Me
               </button>
               {{!-- delete a burger --}}
-              <button class="btn btn-danger deleteBurger" data-burgerid="{{this.id}}">
+              <button class="btn btn-danger deleteBurger manage-burger" data-burgerid="{{this.id}}">
                 Delete Me
               </button>
             </div>
@@ -66,7 +67,7 @@
             <h4>{{this.burger_name}}</h4>
             <div>
               {{!-- delete a burger --}}
-              <button class="btn btn-danger deleteBurger" data-burgerid="{{this.id}}">
+              <button class="btn btn-danger deleteBurger manage-burger" data-burgerid="{{this.id}}">
                 Delete Me
               </button>
             </div>

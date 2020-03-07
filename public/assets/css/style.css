@@ -1,4 +1,31 @@
-.card-image {
+.header-image {
     background-image: url(../../assets/images/burger.png);
-
+        
 }
+
+.header-text {
+    background: linear-gradient(to left, #ff9900 0%, #ffff99 100%);
+} 
+
+.body-text {
+    background: linear-gradient(to top, #ff9900 0%, #ffff99 100%);
+} 
+
+.manage-burger {
+    width: 70px;
+    height: 70px;
+    /* padding: 10px 16px; */
+    border-radius: 35px;
+    font-size: 13px;
+    line-height: 1.33;
+  }
+
+  .add-btn {
+    /* width: 70px;
+    height: 70px; */
+    /* padding: 10px 16px; */
+    border-radius: 12px;
+    font-size: 13px;
+    line-height: 1.33;
+  }
+
